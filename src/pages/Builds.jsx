@@ -26,7 +26,7 @@ const majorProjects = [
     title: "Realm Portfolio",
     description:
       "A sci-fi inspired, interactive portfolio built with React + Tailwind. Designed to showcase creative builds, technical achievements, and future quests.",
-    link: "https://wild-butterfly.github.io/portfolio-website",
+    link: "https://wild-butterfly.github.io/realm-portfolio",
     color: "from-magicBlue to-neonPurple",
   },
 ];

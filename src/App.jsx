@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Realm from "./Realm";
+import Realm from "./pages/Realm";
 import portalSound from "./assets/sounds/mixkit-technology-transition-slide-3120.wav";
 
 // Icons
