@@ -37,7 +37,6 @@ Instead of a traditional static site, this project creates a small “realm” w
 ## 📁 Project Structure
 
 realm-portfolio/
-│
 ├─ src/
 │ ├─ assets/ # images, sounds, icons
 │ ├─ components/ # UI components
@@ -46,7 +45,9 @@ realm-portfolio/
 │ └─ main.jsx
 │
 ├─ public/
+│
 ├─ dist/ # build output
+│
 ├─ package.json
 ├─ vite.config.js
 └─ README.md
