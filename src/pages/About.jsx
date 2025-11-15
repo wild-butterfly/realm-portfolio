@@ -2,14 +2,25 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+// Fotoğraf
+import myPhoto from "../assets/images/myphoto.jpg";
+
+// Icons
+import { FaUserAstronaut } from "react-icons/fa";
+import { HiArrowLeftCircle } from "react-icons/hi2";
+import { RiStackLine } from "react-icons/ri";
+import { HiOutlineSparkles } from "react-icons/hi2";
+import { BsRocketTakeoff } from "react-icons/bs";
+
 export default function About() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-realm-gradient text-white flex flex-col items-center py-16 px-6 font-gamer">
       {/* Title */}
-      <h1 className="text-4xl md:text-6xl text-magicBlue mb-4 text-center">
-        👤 About the Developer
+      <h1 className="text-4xl md:text-6xl text-magicBlue mb-4 text-center flex items-center justify-center gap-3">
+        <FaUserAstronaut className="text-neonPurple drop-shadow-[0_0_10px_#c27bff]" />
+        About the Developer
       </h1>
 
       <p className="text-itemGreen mb-10 text-center max-w-2xl opacity-90">
@@ -29,8 +40,15 @@ export default function About() {
           </span>
 
           {/* Avatar */}
-          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-magicBlue to-neonPurple flex items-center justify-center text-3xl font-bold mb-4 shadow-[0_0_25px_#00e7ff80]">
-            AF
+          <div
+            className="w-24 h-24 rounded-full p-[3px] bg-gradient-to-br 
+             from-magicBlue to-neonPurple shadow-[0_0_25px_#00e7ff80] mb-4"
+          >
+            <img
+              src={myPhoto}
+              alt="Aşkın Fear"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
 
           <h2 className="text-2xl text-itemGreen mb-1">Aşkın Fear</h2>
@@ -40,6 +58,7 @@ export default function About() {
 
           {/* Stats */}
           <div className="w-full space-y-3 text-xs">
+            {/* Creativity */}
             <div>
               <div className="flex justify-between mb-1">
                 <span className="text-gray-300">Creativity</span>
@@ -50,6 +69,7 @@ export default function About() {
               </div>
             </div>
 
+            {/* Problem Solving */}
             <div>
               <div className="flex justify-between mb-1">
                 <span className="text-gray-300">Problem Solving</span>
@@ -60,11 +80,70 @@ export default function About() {
               </div>
             </div>
 
+            {/* NEW — Code Quality */}
             <div>
               <div className="flex justify-between mb-1">
-                <span className="text-gray-300">Developer Class</span>
-                <span className="text-itemGreen">
-                  Full-Stack • UI/UX-Focused • Product Developer
+                <span className="text-gray-300">Code Quality</span>
+                <span className="text-itemGreen">94 / 100</span>
+              </div>
+              <div className="h-2 rounded-full bg-black/40 overflow-hidden">
+                <div className="h-full w-[94%] bg-gradient-to-r from-itemGreen to-magicBlue" />
+              </div>
+            </div>
+
+            {/* NEW — Speed & Efficiency */}
+            <div>
+              <div className="flex justify-between mb-1">
+                <span className="text-gray-300">Speed & Efficiency</span>
+                <span className="text-itemGreen">90 / 100</span>
+              </div>
+              <div className="h-2 rounded-full bg-black/40 overflow-hidden">
+                <div className="h-full w-[90%] bg-gradient-to-r from-neonPurple to-itemGreen" />
+              </div>
+            </div>
+
+            {/* NEW — UI/UX Sense */}
+            <div>
+              <div className="flex justify-between mb-1">
+                <span className="text-gray-300">UI/UX Sense</span>
+                <span className="text-itemGreen">97 / 100</span>
+              </div>
+              <div className="h-2 rounded-full bg-black/40 overflow-hidden">
+                <div className="h-full w-[97%] bg-gradient-to-r from-itemGreen to-neonPurple" />
+              </div>
+            </div>
+
+            {/* NEW — System Architecture */}
+            <div>
+              <div className="flex justify-between mb-1">
+                <span className="text-gray-300">System Architecture</span>
+                <span className="text-itemGreen">88 / 100</span>
+              </div>
+              <div className="h-2 rounded-full bg-black/40 overflow-hidden">
+                <div className="h-full w-[88%] bg-gradient-to-r from-magicBlue to-neonPurple" />
+              </div>
+            </div>
+
+            {/* Developer Class */}
+            <div className="mt-4">
+              <span className="text-xs tracking-[0.2em] uppercase text-gray-400">
+                Developer Class
+              </span>
+
+              <div className="flex flex-wrap items-center gap-3 mt-2 text-itemGreen text-sm">
+                <span className="flex items-center gap-1">
+                  <RiStackLine size={16} className="text-itemGreen" />
+                  Full-Stack
+                </span>
+
+                <span className="flex items-center gap-1">
+                  <HiOutlineSparkles size={16} className="text-itemGreen" />
+                  UI/UX-Focused
+                </span>
+
+                <span className="flex items-center gap-1">
+                  <BsRocketTakeoff size={16} className="text-itemGreen" />
+                  Product Developer
                 </span>
               </div>
             </div>
@@ -137,9 +216,10 @@ export default function About() {
         className="mt-10 px-6 py-2 bg-gradient-to-r 
                    from-magicBlue to-neonPurple rounded-lg 
                    text-black font-bold hover:scale-110 
-                   transition-all duration-500 shadow-lg"
+                   transition-all duration-500 shadow-lg flex items-center gap-2"
       >
-        ← Back to Realm
+        <HiArrowLeftCircle className="text-black text-xl" />
+        Back to Realm
       </button>
     </div>
   );

@@ -2,6 +2,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+// İkonlar – hi2 yerine FontAwesome kullanıyoruz
+import { FaBrain, FaArrowLeft } from "react-icons/fa";
+
 export default function Skills() {
   const navigate = useNavigate();
 
@@ -51,8 +54,9 @@ export default function Skills() {
   return (
     <div className="min-h-screen bg-realm-gradient text-white flex flex-col items-center py-16 px-6 font-gamer">
       {/* Title */}
-      <h1 className="text-4xl md:text-6xl text-magicBlue mb-6 animate-fadeIn">
-        🧠 Knowledge & Skills
+      <h1 className="text-4xl md:text-6xl text-magicBlue mb-6 animate-fadeIn flex items-center gap-3">
+        <FaBrain className="text-itemGreen drop-shadow-[0_0_10px_#00ffcc]" />
+        Knowledge & Skills
       </h1>
 
       <p className="text-itemGreen text-center max-w-2xl mb-12 opacity-90">
@@ -93,9 +97,10 @@ export default function Skills() {
         className="mt-10 px-6 py-2 bg-gradient-to-r 
                    from-magicBlue to-neonPurple rounded-lg 
                    text-black font-bold hover:scale-110 
-                   transition-all duration-500 shadow-lg"
+                   transition-all duration-500 shadow-lg flex items-center gap-2"
       >
-        ← Back to Realm
+        <FaArrowLeft className="text-black text-lg" />
+        Back to Realm
       </button>
     </div>
   );

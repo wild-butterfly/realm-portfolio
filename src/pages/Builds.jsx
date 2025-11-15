@@ -2,6 +2,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+// Icons
+import { MdBuild } from "react-icons/md";
+import { GiStarsStack } from "react-icons/gi";
+import { HiArrowLeftCircle } from "react-icons/hi2";
+
 const majorProjects = [
   {
     title: "Clevermode Website",
@@ -58,8 +63,9 @@ export default function Builds() {
 
   return (
     <div className="min-h-screen bg-realm-gradient text-white flex flex-col items-center py-16 px-6 font-gamer">
-      <h1 className="text-4xl md:text-6xl mb-12 text-magicBlue animate-fadeIn">
-        ⚙️ BUILDS & CREATIONS
+      <h1 className="text-4xl md:text-6xl mb-12 text-magicBlue animate-fadeIn flex items-center gap-3">
+        <MdBuild className="text-itemGreen drop-shadow-[0_0_10px_#00ffcc]" />
+        BUILDS & CREATIONS
       </h1>
 
       {/* Major Projects */}
@@ -88,7 +94,11 @@ export default function Builds() {
       </div>
 
       {/* Mini Projects */}
-      <h2 className="text-2xl text-itemGreen mt-16 mb-6">✨ Mini Builds</h2>
+      <h2 className="text-2xl text-itemGreen mt-16 mb-6 flex items-center gap-2">
+        <GiStarsStack className="text-neonPurple drop-shadow-[0_0_8px_#d57bff]" />
+        Mini Builds
+      </h2>
+
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl">
         {miniProjects.map((p, i) => (
           <a
@@ -107,9 +117,10 @@ export default function Builds() {
       {/* Back Button */}
       <button
         onClick={() => navigate("/realm")}
-        className="mt-8 px-6 py-2 bg-gradient-to-r from-magicBlue to-neonPurple rounded-lg text-black font-bold hover:scale-110 transition-all"
+        className="mt-8 px-6 py-2 bg-gradient-to-r from-magicBlue to-neonPurple rounded-lg text-black font-bold hover:scale-110 transition-all flex items-center gap-2"
       >
-        ← Back to Realm
+        <HiArrowLeftCircle className="text-black text-xl" />
+        Back to Realm
       </button>
     </div>
   );
