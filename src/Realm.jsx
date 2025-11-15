@@ -20,7 +20,8 @@ export default function Realm() {
         >
           <h2 className="text-cyan-400 text-xl mb-2">⚙️ Builds & Creations</h2>
           <p className="text-sm text-white/70">
-            Explore my latest projects, from PCB testers to clever web apps.
+            Explore my real-world projects — Honeycomb Platform, the Clevermode
+            SaaS system and my other creations.
           </p>
         </div>
 
@@ -30,7 +31,8 @@ export default function Realm() {
         >
           <h2 className="text-cyan-400 text-xl mb-2">🧠 Knowledge & Skills</h2>
           <p className="text-sm text-white/70">
-            See the tools, languages and frameworks I master.
+            A full overview of the technologies, tools and frameworks I use to
+            build my worlds.
           </p>
         </div>
 
@@ -40,7 +42,8 @@ export default function Realm() {
         >
           <h2 className="text-cyan-400 text-xl mb-2">👤 About the Developer</h2>
           <p className="text-sm text-white/70">
-            Learn who I am, my journey and my future quests.
+            Learn about my journey, what I build and the quests I’m taking on
+            next.
           </p>
         </div>
       </div>
