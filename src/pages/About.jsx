@@ -2,7 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// Fotoğraf
+// Photo
 import myPhoto from "../assets/images/myphoto.jpg";
 
 // Icons
@@ -80,7 +80,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* NEW — Code Quality */}
+            {/*Code Quality */}
             <div>
               <div className="flex justify-between mb-1">
                 <span className="text-gray-300">Code Quality</span>
@@ -91,7 +91,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* NEW — Speed & Efficiency */}
+            {/*Speed & Efficiency */}
             <div>
               <div className="flex justify-between mb-1">
                 <span className="text-gray-300">Speed & Efficiency</span>
@@ -102,7 +102,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* NEW — UI/UX Sense */}
+            {/*UI/UX Sense */}
             <div>
               <div className="flex justify-between mb-1">
                 <span className="text-gray-300">UI/UX Sense</span>
@@ -113,7 +113,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* NEW — System Architecture */}
+            {/*System Architecture */}
             <div>
               <div className="flex justify-between mb-1">
                 <span className="text-gray-300">System Architecture</span>
@@ -150,7 +150,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Lore / Story */}
+        {/*Story */}
         <div className="bg-darkGray/70 border border-magicBlue/40 rounded-3xl p-6 shadow-[0_0_25px_#00e7ff30] space-y-6">
           <section>
             <h3 className="text-itemGreen text-lg mb-2">Origin Story</h3>

@@ -2,7 +2,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// İkonlar – hi2 yerine FontAwesome kullanıyoruz
 import { FaBrain, FaArrowLeft } from "react-icons/fa";
 
 export default function Skills() {
