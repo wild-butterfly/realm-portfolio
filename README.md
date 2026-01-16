@@ -34,32 +34,33 @@ Instead of a traditional static site, this project creates a small “realm” w
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
+```text
 realm-portfolio/
-├── src/
-│ ├── assets/
-│ │ ├── images/ # Images
-│ │ ├── sounds/ # Sound effects
-│ │ └── icons/ # UI icons
-│ │
-│ ├── components/ # Reusable UI components
-│ │ ├── Portal.jsx
-│ │ ├── Menu.jsx
-│ │ └── DeveloperCard.jsx
-│ │
-│ ├── pages/ # Application pages
-│ │ ├── Realm.jsx
-│ │ ├── Builds.jsx
-│ │ ├── Skills.jsx
-│ │ └── About.jsx
-│ │
-│ ├── App.jsx # Root application component
-│ └── main.jsx # Application entry point
+├─ src/
+│  ├─ assets/
+│  │  ├─ images/        # Images used across the app
+│  │  ├─ sounds/        # Sound effects
+│  │  └─ icons/         # UI icons
+│  │
+│  ├─ components/       # Reusable UI components
+│  │  ├─ Portal.jsx
+│  │  ├─ Menu.jsx
+│  │  └─ DeveloperCard.jsx
+│  │
+│  ├─ pages/            # Application pages
+│  │  ├─ Realm.jsx
+│  │  ├─ Builds.jsx
+│  │  ├─ Skills.jsx
+│  │  └─ About.jsx
+│  │
+│  ├─ App.jsx           # Root application component
+│  └─ main.jsx          # Application entry point
 │
-├── public/ # Static public assets
-├── dist/ # Production build output
-│
-├── package.json
-├── vite.config.js
-└── README.md
+├─ public/               # Static public assets
+├─ dist/                 # Production build output
+├─ package.json
+├─ vite.config.js
+└─ README.md
+
