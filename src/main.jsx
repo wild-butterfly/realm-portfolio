@@ -11,6 +11,12 @@ import About from "./pages/About.jsx";
 
 import "./index.css";
 
+const redirect = sessionStorage.redirect;
+if (redirect) {
+  sessionStorage.removeItem("redirect");
+  window.history.replaceState(null, null, redirect);
+}
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
