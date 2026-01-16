@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { MdBuild } from "react-icons/md";
 import { GiStarsStack } from "react-icons/gi";
 import { HiArrowLeftCircle } from "react-icons/hi2";
+import { HiLockClosed } from "react-icons/hi2";
 
 const majorProjects = [
   {
@@ -19,7 +20,7 @@ const majorProjects = [
     title: "Honeycomb Platform",
     description:
       "Workflow automation system for teams — integrates task scheduling, invoicing, and analytics in a single cloud-based dashboard. Focused on streamlining operational efficiency.",
-    link: "#",
+    private: true,
     color: "from-neonPurple to-itemGreen",
   },
   {
@@ -70,27 +71,52 @@ export default function Builds() {
 
       {/* Major Projects */}
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl">
-        {majorProjects.map((p, i) => (
-          <a
-            key={i}
-            href={p.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`bg-gradient-to-br ${p.color} p-[2px] rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_25px_#00E7FF80]`}
-          >
-            <div className="bg-darkGray rounded-2xl h-full p-6 flex flex-col justify-between">
-              <div>
-                <h2 className="text-2xl mb-3 text-itemGreen">{p.title}</h2>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {p.description}
-                </p>
+        {majorProjects.map((p, i) =>
+          p.private ? (
+            <div
+              key={i}
+              className={`bg-gradient-to-br ${p.color} p-[2px] rounded-2xl shadow-lg`}
+            >
+              <div className="bg-darkGray rounded-2xl h-full p-6 flex flex-col justify-between">
+                <div>
+                  <h2 className="text-2xl mb-3 text-itemGreen">{p.title}</h2>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {p.description}
+                  </p>
+                </div>
+
+                {/* 🔒 Private tag */}
+                <span className="mt-6 inline-flex items-center gap-2 text-xs text-neonPurple">
+                  <HiLockClosed className="text-sm drop-shadow-[0_0_4px_rgba(181,126,255,0.6)]" />
+                  <span className="opacity-85">
+                    Private project — available on request
+                  </span>
+                </span>
               </div>
-              <span className="mt-6 inline-block text-magicBlue text-xs">
-                VIEW PROJECT →
-              </span>
             </div>
-          </a>
-        ))}
+          ) : (
+            <a
+              key={i}
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`bg-gradient-to-br ${p.color} p-[2px] rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_25px_#00E7FF80]`}
+            >
+              <div className="bg-darkGray rounded-2xl h-full p-6 flex flex-col justify-between">
+                <div>
+                  <h2 className="text-2xl mb-3 text-itemGreen">{p.title}</h2>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {p.description}
+                  </p>
+                </div>
+
+                <span className="mt-6 inline-block text-magicBlue text-xs">
+                  VIEW PROJECT →
+                </span>
+              </div>
+            </a>
+          )
+        )}
       </div>
 
       {/* Mini Projects */}
