@@ -20,7 +20,7 @@ const majorProjects = [
     title: "Honeycomb Platform",
     description:
       "Workflow automation system for teams — integrates task scheduling, invoicing, and analytics in a single cloud-based dashboard. Focused on streamlining operational efficiency.",
-    private: true,
+    link: "https://github.com/wild-butterfly/honeycomb-dev-real",
     color: "from-neonPurple to-itemGreen",
   },
   {
@@ -40,22 +40,22 @@ const miniProjects = [
     link: "https://github.com/wild-butterfly/cocktailfinder",
   },
   {
-    title: "Exercise Finder",
-    description:
-      "Lightweight HTML/JS app that allows users to search exercises by muscle group, with a clean and simple UI powered by API requests.",
-    link: "https://github.com/wild-butterfly/exercisefinder",
-  },
-  {
     title: "Gossip Girl Database",
     description:
       "A fun SQL-based project that creates a 'my_database' schema with a members table containing iconic Gossip Girl characters. Demonstrates SQL database creation, table management, and data insertion.",
     link: "https://github.com/wild-butterfly/gossipgirlAPI",
   },
   {
-    title: "XML Project",
+    title: "Memory Game",
     description:
-      "A front-end project exploring structured XML data rendering and styling with CSS, highlighting data parsing and presentation.",
-    link: "https://github.com/wild-butterfly/xml-project",
+      "A classic memory card game built with vanilla JavaScript. Focuses on game logic, state management, DOM manipulation, and user interaction.",
+    link: "https://github.com/wild-butterfly/memory-game-js",
+  },
+  {
+    title: "Rock Paper Scissors",
+    description:
+      "A browser-based Rock Paper Scissors game built with JavaScript. Demonstrates conditional logic, event handling, and interactive UI updates.",
+    link: "https://github.com/wild-butterfly/rock-paper-scissors",
   },
 ];
 
