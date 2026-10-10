@@ -33,6 +33,3 @@ dist-ssr/
 # OS-specific files
 .DS_Store
 Thumbs.db
-
-# Optional npm cache files
-package-lock.json
